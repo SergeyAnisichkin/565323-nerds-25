@@ -1,182 +1,184 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-  </head>
-  <body>
-    <header class="main-header">
-      <nav class="main-navigation">
-        <a class="main-header-logo" href="index.html">
-          <img src="http://placehold.it/160x65" width="160" height="65" alt="Логотип студии «Нёрдс»">
-        </a>
-        <ul class="site-navigation">
-          <li class="site-navigation-current"><a href="info.html">Студия</a></li>
-          <li><a href="customers.html">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
-        </ul>
-        <ul class="user-navigation">
-          <li class="basket-link"><a href="#">Корзина</a></li>
-        </ul>
-      </nav>
-      <div class="heading">
-        <h1 class="heading-text">Магазин готовых шаблонов</h1>
-      </div>
-    </header>
-    <main class="container">
-      <form class="filter">
-        <label class="filter-price">
-          Стоимость:
-          <input type="range" min="0" max="20000" step="1000" value="15000">
-          <label class="price-min">
-            От
-            <input type="number" min="0" max="20000" value="0">
-          </label>
-          <label class="price-max">
-            До
-            <input type="number" min="0" max="20000" value="15000">
-          </label>
-        </label>
-        <label class="filter-grid">
-          Сетка:
-          <p><input name="grid" type="radio" value="1" checked>Адаптивная</p>
-          <p><input name="grid" type="radio" value="2">Фиксированная</p>
-          <p><input name="grid" type="radio" value="3">Резиновая</p>
-        </label>
-        <label class="filter-features">
-          Особенности:
-          <p><input name="features" type="checkbox" value="1" checked>Слайдер</p>
-          <p><input name="features" type="checkbox" value="2">Блок преимуществ</p>
-          <p><input name="features" type="checkbox" value="3">Новости</p>
-          <p><input name="features" type="checkbox" value="4">Галерея</p>
-          <p><input name="features" type="checkbox" value="5">Корзина</p>
-        </label>
-        <p><button type="submit">Показать</button></p>
-      </form>
-      <section class="catalog">
-        <div class="catalog-sorting">
-          <span class="sorting-title">Сортировать</span>
-          <button class="sorting-button">По цене</button>
-          <button class="sorting-button">По типу</button>
-          <button class="sorting-button">По названию</button>
-          <button class="sorting-button-down"></button>
-          <button class="sorting-button-up"></button>
-        </div>
-        <ul class="catalog-list">
-          <li class="catalog-item">
-            <div class="catalog-item-img">
-              <img src="http://placehold.it/360x576" width="360" height="576" alt="Превью сайта">
-            </div>
-            <div class="catalog-item-price">
-              <p class="site-title">Sedona</p>
-              <p class="site-text">Информационный сайт для туристов</p>
-              <a class="price-button" href="#"> 9 900 РУБ.</a>
-            </div>            
-          </li>
-          <li class="catalog-item">
-            <div class="catalog-item-img">
-              <img src="http://placehold.it/360x576" width="360" height="576" alt="Превью сайта">
-            </div>
-            <div class="catalog-item-price">
-              <p class="site-title">Sedona</p>
-              <p class="site-text">Информационный сайт для туристов</p>
-              <a class="price-button" href="#"> 9 900 РУБ.</a>
-            </div>            
-          </li>
-          <li class="catalog-item">
-            <div class="catalog-item-img">
-              <img src="http://placehold.it/360x576" width="360" height="576" alt="Превью сайта">
-            </div>
-            <div class="catalog-item-price">
-              <p class="site-title">Sedona</p>
-              <p class="site-text">Информационный сайт для туристов</p>
-              <a class="price-button" href="#"> 9 900 РУБ.</a>
-            </div>            
-          </li>
-          <li class="catalog-item">
-            <div class="catalog-item-img">
-              <img src="http://placehold.it/360x576" width="360" height="576" alt="Превью сайта">
-            </div>
-            <div class="catalog-item-price">
-              <p class="site-title">Sedona</p>
-              <p class="site-text">Информационный сайт для туристов</p>
-              <a class="price-button" href="#"> 9 900 РУБ.</a>
-            </div>            
-          </li>
-          <li class="catalog-item">
-            <div class="catalog-item-img">
-              <img src="http://placehold.it/360x576" width="360" height="576" alt="Превью сайта">
-            </div>
-            <div class="catalog-item-price">
-              <p class="site-title">Sedona</p>
-              <p class="site-text">Информационный сайт для туристов</p>
-              <a class="price-button" href="#"> 9 900 РУБ.</a>
-            </div>            
-          </li>
-          <li class="catalog-item">
-            <div class="catalog-item-img">
-              <img src="http://placehold.it/360x576" width="360" height="576" alt="Превью сайта">
-            </div>
-            <div class="catalog-item-price">
-              <p class="site-title">Sedona</p>
-              <p class="site-text">Информационный сайт для туристов</p>
-              <a class="price-button" href="#"> 9 900 РУБ.</a>
-            </div>            
-          </li>
-        </ul>
-      </section>
-      <ul class="pagination-list">
-        <li class="pagination-item pagination-item-current"><a>1</a></li>
-        <li class="pagination-item"><a href="#">2</a></li>
-        <li class="pagination-item"><a href="#">3</a></li>
-        <li class="pagination-item"><a href="#">Следующая</a></li>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Нёрдс</title>
+</head>
+<body>
+  <header class="main-header">
+    <nav class="navigation">
+      <a href="index.html">
+        <img src="http://placehold.it/160x65" width="160" height="65" alt="Логотип «Нёрдс»">
+      </a>
+      <ul class="site-navigation">
+        <li><a href="#">Студия</a></li>
+        <li><a href="#">Клиенты</a></li>
+        <li class="current"><a>Магазин</a></li>
+        <li><a href="#">Контакты</a></li>
       </ul>
-    </main>
-    <footer class="main-footer">
-      <div class="footer-contacts">
-          <img class="contacts-map" src="http://placehold.it/1700x800" width="1700" height="800" alt="Карта">
-          <img class="contacts-map-marker" src="http://placehold.it/230x190" width="230" height="190" alt="Маркер">
-          <div class="footer-contacts-text"></div>
-          <p class="contacts-title">
-              NЁRDS DESIGN STUDIO
-          </p>  
-          <p>
-              191186, Санкт-Петербург,<br>
-              Б. Конюшенная, д. 19/8<br>
-              <br>
-              Телефон: +7 (812) 275-75-75<br>
-              <a class="button" href="#">Напишите нам</a>
-          </p>
-          </div>
+      <ul class="user-navigation">
+        <li class="basket-link"><a href="#">Корзина</a></li>
+      </ul>
+    </nav>
+    <h1 class="heading-text">Магазин готовых шаблонов</h1>
+  </header>
+  <main class="container">
+    <form class="filter">
+      <label class="filter-price" for="range">Стоимость:</label>
+      <input type="range" min="0" max="20000" value="15000" id="range">
+      <label class="price-min" for="price-min">От</label>
+      <input type="number" min="0" max="20000" value="0" id="price-min">
+      <label class="price-max" for="price-max">До</label>
+      <input type="number" min="0" max="20000" value="0" id="price-max">       
+      
+      <p class="filter-grid">Сетка:</p>
+      <input name="grid" type="radio" id="adapt" checked>
+      <label class="filter-grid" for="adapt">Адаптивная</label>
+      <input name="grid" type="radio" id="fix">
+      <label class="filter-grid" for="fix">Фиксированная</label>
+      <input name="grid" type="radio" id="resp">
+      <label class="filter-grid" for="resp">Резиновая</label>
+
+      <p class="filter-features">Особенности:</p>
+      <input name="features" type="checkbox" id="slider" checked>
+      <label class="filter-features" for="slider">Слайдер</label>
+      <input name="features" type="checkbox" id="block">
+      <label class="filter-features" for="block">Блок преимуществ</label>
+      <input name="features" type="checkbox" id="news">
+      <label class="filter-features" for="news">Новости</label>
+      <input name="features" type="checkbox" id="gallery">
+      <label class="filter-features" for="gallery">Галерея</label>
+      <input name="features" type="checkbox" id="basket">
+      <label class="filter-features" for="basket">Корзина</label>
+      <button type="submit">Показать</button>
+    </form>
+    <section class="catalog">
+      <div class="catalog-sorting">
+        <span class="sorting-title">Сортировать</span>
+        <a class="button sorting-button">По цене</a>
+        <a class="button sorting-button">По типу</a>
+        <a class="button sorting-button">По названию</a>
+        <a class="button sorting-button-down"></a>
+        <a class="button sorting-button-up"></a>
       </div>
-      <div class="footer-social">
-          <ul>
-          <li>
-              <a class="social-button" href="#">
-              <img class="vk-icon" src="http://placehold.it/20x20" width="20" height="20" alt="Вконтакте">
-              </a>
-          </li>
-          <li>
-              <a class="social-button" href="#">
-              <img class="fb-icon" src="http://placehold.it/20x20" width="20" height="20" alt="Фейсбук">
-              </a>
-          </li>
-          <li>
-              <a class="social-button" href="#">
-              <img class="insta-icon" src="http://placehold.it/20x20" width="20" height="20" alt="Инстаграм">
-              </a>
-          </li>
-          </ul>
-          <div class="social-text">
-          <p class="social-slogan">
-              Давайте дружить, это выгодно!
-          </p>
-          <p>
-              Скидка 10% для друзей из социальных сетей.
-          </p>
+      <ul class="catalog-list">
+        <li class="catalog-item">
+          <div class="catalog-item-slider">
+              <span>...</span>
           </div>
+          <img src="http://placehold.it/360x576" width="360" height="576" alt="Превью сайта">
+          <div class="catalog-item-price">
+            <p class="site-title">Sedona</p>
+            <p class="site-text">Информационный сайт для туристов</p>
+            <a class="price-button" href="#"> 9 900 РУБ.</a>
+          </div>            
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-slider">
+              <span>...</span>
+          </div>
+          <img src="http://placehold.it/360x576" width="360" height="576" alt="Превью сайта">
+          <div class="catalog-item-price">
+            <p class="site-title">Sedona</p>
+            <p class="site-text">Информационный сайт для туристов</p>
+            <a class="price-button" href="#"> 9 900 РУБ.</a>
+          </div>            
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-slider">
+              <span>...</span>
+          </div>
+          <img src="http://placehold.it/360x576" width="360" height="576" alt="Превью сайта">
+          <div class="catalog-item-price">
+            <p class="site-title">Sedona</p>
+            <p class="site-text">Информационный сайт для туристов</p>
+            <a class="price-button" href="#"> 9 900 РУБ.</a>
+          </div>            
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-slider">
+              <span>...</span>
+          </div>
+          <img src="http://placehold.it/360x576" width="360" height="576" alt="Превью сайта">
+          <div class="catalog-item-price">
+            <p class="site-title">Sedona</p>
+            <p class="site-text">Информационный сайт для туристов</p>
+            <a class="price-button" href="#"> 9 900 РУБ.</a>
+          </div>            
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-slider">
+              <span>...</span>
+          </div>
+          <img src="http://placehold.it/360x576" width="360" height="576" alt="Превью сайта">
+          <div class="catalog-item-price">
+            <p class="site-title">Sedona</p>
+            <p class="site-text">Информационный сайт для туристов</p>
+            <a class="price-button" href="#"> 9 900 РУБ.</a>
+          </div>            
+        </li>
+        <li class="catalog-item">
+          <div class="catalog-item-slider">
+              <span>...</span>
+          </div>
+          <img src="http://placehold.it/360x576" width="360" height="576" alt="Превью сайта">
+          <div class="catalog-item-price">
+            <p class="site-title">Sedona</p>
+            <p class="site-text">Информационный сайт для туристов</p>
+            <a class="price-button" href="#"> 9 900 РУБ.</a>
+          </div>            
+        </li>
+      </ul>
+    </section>
+    <ul class="pagination-list">
+      <li class="pagination-item current"><a>1</a></li>
+      <li class="pagination-item"><a href="#">2</a></li>
+      <li class="pagination-item"><a href="#">3</a></li>
+      <li class="pagination-item"><a href="#">Следующая</a></li>
+    </ul>
+  </main>
+  <footer class="footer">
+    <div class="contacts">
+      <img class="contacts-map" src="http://placehold.it/1700x800" width="1700" height="800" alt="Карта">
+      <img class="contacts-map-marker" src="http://placehold.it/230x190" width="230" height="190" alt="Маркер">
+      <div class="contacts-text">
+        <h2 class="contacts-title">
+          NЁRDS DESIGN STUDIO
+        </h2>  
+        <p class="contacts-address">
+          191186, Санкт-Петербург,<br>
+          Б. Конюшенная, д. 19/8<br>
+          <br>
+          Телефон: +7 (812) 275-75-75<br>
+          <a class="button" href="#">Напишите нам</a>
+        </p>
       </div>
-    </footer>
-  </body>
+    </div>
+    <ul class="social">
+      <li>
+        <a class="social-button" href="#">
+          <img class="vk-icon" src="http://placehold.it/20x20" width="20" height="20" alt="Вконтакте">
+        </a>
+      </li>
+      <li>
+        <a class="social-button" href="#">
+          <img class="fb-icon" src="http://placehold.it/20x20" width="20" height="20" alt="Фейсбук">
+        </a>
+      </li>
+      <li>
+        <a class="social-button" href="#">
+          <img class="insta-icon" src="http://placehold.it/20x20" width="20" height="20" alt="Инстаграм">
+        </a>
+      </li>
+    </ul>
+    <div class="social-text">
+      <p class="social-slogan">
+        Давайте дружить, это выгодно!
+      </p>
+      <p>
+        Скидка 10% для друзей из социальных сетей.
+      </p>
+    </div>
+  </footer>
+</body>
 </html>
