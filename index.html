@@ -23,11 +23,20 @@
     <h1 class="visually-hidden">Дизайн-студия «Нёрдс» г. Краснодар</h1>
   </header>
   <main class="container">
-    <section class="features">
+    <section class="slider">
       <h2 class="visually-hidden">Наши особенности</h2>
+      <p class="slide-slogan">
+          Долго, дорого, скрупулезно.
+      </p>
+      <p class="slide-text">
+          Математически выверенный дизайн 
+          для вашего сайта или мобильного приложения.
+      </p>
+      <a class="button" href="#">Узнать больше</a>
+      <img class="slide-img" src="img/slide1.png" width="698" height="413" alt="Слайд 1">
     </section>
     <section class="advantages">
-      <h2 class="visually-hidden">Наши приемущества</h2>
+      <h2 class="visually-hidden">Наши преимущества</h2>
       <ul class="advantages-list">
         <li class="advantages-item">
           <img src="img/adv-web.png" width="300" height="146" alt="Веб-сайты">
@@ -82,7 +91,7 @@
         </ul>
       </div>
       <div class="services-right">
-        <img src="http://placehold.it/360x208" width="360" height="208" alt="Илюстрация-логотип «Нёрдс»">
+        <img class="services-logo" src="img/nerds-illustration.png" width="360" height="208" alt="Илюстрация «Нёрдс»">
         <table class="services-table">
           <caption class="services-table-title">
             с 2004 года Любим точность во всем:
@@ -99,7 +108,7 @@
             <td>
               <span class="table-date">146</span>
               <span class="table-percent">%</span>
-              </td>
+            </td>
           </tr>
           <tr>
             <td>Уровень самоотдачи</td>
@@ -114,31 +123,54 @@
       <ul class="portfolio-list">
         <li class="portfolio-item">
           <a href="#">
-            <img src="http://placehold.it/200x100" width="200" height="100" alt="Cайт Академии">
+            <img src="img/htmlacademy-logo.png" width="199" height="68" alt="Логотип Академии">
           </a>  
         </li>
         <li class="portfolio-item">
           <a href="#">
-            <img src="http://placehold.it/200x100" width="200" height="100" alt="Cайт Бородинский">
+            <img src="img/borodinski-logo.png" width="209" height="90" alt="Логотип Бородинский">
           </a>  
         </li>
         <li class="portfolio-item">
           <a href="#">
-            <img src="http://placehold.it/200x100" width="200" height="100" alt="Cайт Пинк">
+            <img src="img/pink-logo.png" width="185" height="52" alt="Логотип Пинк">
           </a>  
           </li>
         <li class="portfolio-item">
           <a href="#">
-            <img src="http://placehold.it/200x100" width="200" height="100" alt="Cайт Мишка">
+            <img src="img/mishka-logo.png" width="173" height="84" alt="Логотип Мишка">
           </a>  
         </li>
       </ul>
     </section>
+    <section class="modal modal-feedback">
+      <h2>Напишите нам</h2>
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="feedback-name">
+          <label class="feedback-label" for="user-name">Ваше имя:</label>
+          <input class="feedback-input" id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+        </p>
+        <p class="feedback-email">
+          <label class="feedback-label" for="user-email">Ваш e-mail:</label>
+          <input class="feedback-input" id="user-email" type="text" name="email" placeholder="email@example.com">
+        </p>
+        <p>
+          <label class="feedback-label" for="user-text">Текст письма:</label>
+          <textarea rows="3" id="user-text" name="text" placeholder="В свободной форме"></textarea>
+        </p>
+        <button class="button" type="submit">
+          Войти
+        </button>
+      </form>
+      <button class="modal-submit" type="submit">
+        Отправить
+      </button>
+    </section>
   </main>
   <footer class="footer">
     <div class="contacts">
-      <img class="contacts-map" src="http://placehold.it/1700x800" width="1700" height="800" alt="Карта">
-      <img class="contacts-map-marker" src="http://placehold.it/230x190" width="230" height="190" alt="Маркер">
+      <img class="contacts-map" src="img/map.png" width="1440" height="416" alt="Карта">
+      <img class="contacts-map-marker" src="img/map-marker.png" width="231" height="190" alt="Маркер">
       <div class="contacts-text">
         <h2 class="contacts-title">
           NЁRDS DESIGN STUDIO
@@ -155,17 +187,17 @@
     <ul class="social">
       <li>
         <a class="social-button" href="#">
-          <img class="vk-icon" src="img/vk-icon.svg" width="20" height="20" alt="Вконтакте">
+          <img class="vk-icon" src="img/vk-icon.svg" width="79" height="79" alt="Вконтакте">
         </a>
       </li>
       <li>
         <a class="social-button" href="#">
-          <img class="fb-icon" src="img/fb-icon.svg" width="20" height="20" alt="Фейсбук">
+          <img class="fb-icon" src="img/fb-icon.svg" width="79" height="79" alt="Фейсбук">
         </a>
       </li>
       <li>
         <a class="social-button" href="#">
-          <img class="insta-icon" src="img/insta-icon.svg" width="20" height="20" alt="Инстаграм">
+          <img class="insta-icon" src="img/insta-icon.svg" width="79" height="79" alt="Инстаграм">
         </a>
       </li>
     </ul>
