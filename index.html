@@ -3,21 +3,29 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
   <header class="header">
     <nav class="navigation">
       <a>
-        <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип «Нёрдс»">
+        <img class="index-logo" src="img/nerds-logo.svg" width="160" height="65" alt="Логотип «Нёрдс»">
       </a>
       <ul class="site-navigation">
-        <li class="current"><a href="#">Студия</a></li>
+        <li><a class="current" href="#">Студия</a></li>
         <li><a href="#">Клиенты</a></li>
         <li><a href="catalog.html">Магазин</a></li>
         <li><a href="#">Контакты</a></li>
       </ul>
       <ul class="user-navigation">
-        <li class="cart-link"><a href="#">Корзина</a></li>
+        <li class="cart-link">
+          <a href="#">
+            <img src="img/cart-icon.svg" width="15" height="15" alt="Иконка Корзина">
+            Корзина
+          </a>
+        </li>
       </ul>
     </nav>
     <h1 class="visually-hidden">Дизайн-студия «Нёрдс» г. Краснодар</h1>
@@ -41,7 +49,7 @@
         <li class="advantages-item">
           <img src="img/adv-web.jpg" width="300" height="146" alt="Веб-сайты">
           <h3 class="advantages-item-title">Веб-сайты</h3>
-          <p class="advantages-item-text">
+          <p>
             Мир никогда не будет прежним после того как увидит ваш сайт!
           </p>
           <a class="button" href="catalog.html">Заказать</a>
@@ -49,18 +57,18 @@
         <li class="advantages-item">
           <img src="img/adv-app.jpg" width="300" height="146" alt="Приложения">
           <h3 class="advantages-item-title">Приложения</h3>
-          <p class="advantages-item-text">
+          <p>
             Покорите топ-10 приложений в AppStore и Google Play
           </p>
-          <a class="button" href="catalog.html">Заказать</a>
+          <a class="button btn-application" href="catalog.html">Заказать</a>
         </li>
         <li class="advantages-item">
           <img src="img/adv-present.jpg" width="300" height="146" alt="Презентации">
           <h3 class="advantages-item-title">Презентации</h3>
-          <p class="advantages-item-text">
+          <p>
             Вы даже не подозреваете,  насколько вы изумительны!
           </p>
-          <a class="button" href="catalog.html">Заказать</a>
+          <a class="button btn-presentation" href="catalog.html">Заказать</a>
         </li>
       </ul>
     </section>
@@ -183,19 +191,19 @@
       </div>
     </div>
     <ul class="social">
-      <li>
-        <a class="social-button" href="#">
-          <img class="vk-icon" src="img/vk-icon.svg" width="79" height="79" alt="Вконтакте">
+      <li class="social-button">
+        <a href="#">
+          <img class="vk-icon" src="img/vk-icon.svg" width="30" height="30" alt="Вконтакте">
         </a>
       </li>
-      <li>
-        <a class="social-button" href="#">
-          <img class="fb-icon" src="img/fb-icon.svg" width="79" height="79" alt="Фейсбук">
+      <li class="social-button">
+        <a href="#">
+          <img class="fb-icon" src="img/fb-icon.svg" width="30" height="30" alt="Фейсбук">
         </a>
       </li>
-      <li>
-        <a class="social-button" href="#">
-          <img class="insta-icon" src="img/insta-icon.svg" width="79" height="79" alt="Инстаграм">
+      <li class="social-button">
+        <a href="#">
+          <img class="insta-icon" src="img/insta-icon.svg" width="30" height="30" alt="Инстаграм">
         </a>
       </li>
     </ul>

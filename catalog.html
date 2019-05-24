@@ -3,21 +3,29 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
   <header class="main-header">
     <nav class="navigation">
       <a href="index.html">
-        <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип «Нёрдс»">
+        <img class="index-logo" src="img/nerds-logo.svg" width="160" height="65" alt="Логотип «Нёрдс»">
       </a>
       <ul class="site-navigation">
         <li><a href="#">Студия</a></li>
         <li><a href="#">Клиенты</a></li>
-        <li class="current"><a>Магазин</a></li>
+        <li><a class="current">Магазин</a></li>
         <li><a href="#">Контакты</a></li>
       </ul>
       <ul class="user-navigation">
-        <li class="cart-link"><a href="#">Корзина</a></li>
+          <li class="cart-link">
+            <a href="#">
+              <img src="img/cart-icon.svg" width="15" height="15" alt="Иконка Корзина">
+              Корзина
+            </a>
+          </li>
       </ul>
     </nav>
     <h1 class="heading-text">Магазин готовых шаблонов</h1>
@@ -33,24 +41,24 @@
       
       <p class="filter-grid">Сетка:</p>
       <input name="grid" type="radio" id="adapt" checked>
-      <label class="filter-grid" for="adapt">Адаптивная</label>
+      <label for="adapt">Адаптивная</label>
       <input name="grid" type="radio" id="fix">
-      <label class="filter-grid" for="fix">Фиксированная</label>
+      <label for="fix">Фиксированная</label>
       <input name="grid" type="radio" id="resp">
-      <label class="filter-grid" for="resp">Резиновая</label>
+      <label for="resp">Резиновая</label>
 
       <p class="filter-features">Особенности:</p>
       <input name="features" type="checkbox" id="slider" checked>
-      <label class="filter-features" for="slider">Слайдер</label>
+      <label for="slider">Слайдер</label>
       <input name="features" type="checkbox" id="block">
-      <label class="filter-features" for="block">Блок преимуществ</label>
+      <label for="block">Блок преимуществ</label>
       <input name="features" type="checkbox" id="news">
-      <label class="filter-features" for="news">Новости</label>
+      <label for="news">Новости</label>
       <input name="features" type="checkbox" id="gallery">
-      <label class="filter-features" for="gallery">Галерея</label>
+      <label for="gallery">Галерея</label>
       <input name="features" type="checkbox" id="cart">
-      <label class="filter-features" for="cart">Корзина</label>
-      <button type="submit">Показать</button>
+      <label for="cart">Корзина</label>
+      <button class="button" type="submit">Показать</button>
     </form>
     <section class="catalog">
       <div class="catalog-sorting">
@@ -63,75 +71,75 @@
       </div>
       <ul class="catalog-list">
         <li class="catalog-item">
-          <div class="catalog-item-slider">
-              <span>...</span>
+          <div class="browser">
+              <img src="img/browser.svg" width="360" height="40" alt="Просмотр">
           </div>
           <img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
           <div class="catalog-item-price">
-            <p class="site-title">Sedona</p>
+            <p class="site-title"><a href="#">Sedona</a></p>
             <p class="site-text">Информационный сайт для туристов</p>
-            <a class="price-button" href="#"> 9 900 РУБ.</a>
+            <a class="button" href="#"> 9 900 РУБ.</a>
           </div>            
         </li>
         <li class="catalog-item">
-          <div class="catalog-item-slider">
-              <span>...</span>
+          <div class="browser">
+              <img src="img/browser.svg" width="360" height="40" alt="Просмотр">
           </div>
           <img src="img/img-pink.jpg" width="360" height="576" alt="Pink App">
           <div class="catalog-item-price">
-            <p class="site-title">Pink App</p>
+            <p class="site-title"><a href="#">Pink App</a></p>
             <p class="site-text">Продуктовый лендинг приложения для iOS и Android</p>
-            <a class="price-button" href="#"> 9 900 РУБ.</a>
+            <a class="button" href="#"> 9 900 РУБ.</a>
           </div>            
         </li>
         <li class="catalog-item">
-          <div class="catalog-item-slider">
-              <span>...</span>
+          <div class="browser">
+              <img src="img/browser.svg" width="360" height="40" alt="Просмотр">
           </div>
           <img src="img/img-barbershop.jpg" width="360" height="576" alt="Barbershop">
           <div class="catalog-item-price">
-            <p class="site-title">Barbershop</p>
+            <p class="site-title"><a href="#">Barbershop</a></p>
             <p class="site-text">Сайт салона красоты. Для мужчин, да.</p>
-            <a class="price-button" href="#"> 9 900 РУБ.</a>
+            <a class="button" href="#"> 9 900 РУБ.</a>
           </div>            
         </li>
         <li class="catalog-item">
-          <div class="catalog-item-slider">
-              <span>...</span>
+          <div class="browser">
+              <img src="img/browser.svg" width="360" height="40" alt="Просмотр">
           </div>
           <img src="img/img-mishka.jpg" width="360" height="576" alt="MISHKA">
           <div class="catalog-item-price">
-            <p class="site-title">MISHKA</p>
+            <p class="site-title"><a href="#">MISHKA</a></p>
             <p class="site-text">Интернет-магазин  вязаных игрушек</p>
-            <a class="price-button" href="#"> 9 900 РУБ.</a>
+            <a class="button" href="#"> 9 900 РУБ.</a>
           </div>            
         </li>
         <li class="catalog-item">
-          <div class="catalog-item-slider">
-              <span>...</span>
+          <div class="browser">
+              <img src="img/browser.svg" width="360" height="40" alt="Просмотр">
           </div>
           <img src="img/img-aplus.jpg" width="360" height="576" alt="Aplus">
           <div class="catalog-item-price">
-            <p class="site-title">Aplus</p>
+            <p class="site-title"><a href="#">Aplus</a></p>
             <p class="site-text">Лендинг курсов повышения квалификации</p>
-            <a class="price-button" href="#"> 9 900 РУБ.</a>
+            <a class="button" href="#"> 9 900 РУБ.</a>
           </div>            
         </li>
         <li class="catalog-item">
-          <div class="catalog-item-slider">
-              <span>...</span>
+          <div class="browser">
+              <img src="img/browser.svg" width="360" height="40" alt="Просмотр">
           </div>
           <img src="img/img-kvast.jpg" width="360" height="576" alt="КВАСТ">
           <div class="catalog-item-price">
-            <p class="site-title">КВАСТ</p>
+            <p class="site-title"><a href="#">КВАСТ</a></p>
             <p class="site-text">Промо-сайт производителя крафтового кваса</p>
-            <a class="price-button" href="#"> 9 900 РУБ.</a>
+            <a class="button" href="#"> 9 900 РУБ.</a>
           </div>            
         </li>
       </ul>
     </section>
     <ul class="pagination-list">
-      <li class="pagination-item current"><a>1</a></li>
+      <li class="pagination-item"><a class="current">1</a></li>
       <li class="pagination-item"><a href="#">2</a></li>
       <li class="pagination-item"><a href="#">3</a></li>
       <li class="pagination-item"><a href="#">Следующая</a></li>
@@ -176,22 +184,22 @@
         </div>
       </div>
       <ul class="social">
-        <li>
-          <a class="social-button" href="#">
-            <img class="vk-icon" src="img/vk-icon.svg" width="79" height="79" alt="Вконтакте">
-          </a>
-        </li>
-        <li>
-          <a class="social-button" href="#">
-            <img class="fb-icon" src="img/fb-icon.svg" width="79" height="79" alt="Фейсбук">
-          </a>
-        </li>
-        <li>
-          <a class="social-button" href="#">
-            <img class="insta-icon" src="img/insta-icon.svg" width="79" height="79" alt="Инстаграм">
-          </a>
-        </li>
-      </ul>
+          <li class="social-button">
+            <a href="#">
+              <img class="vk-icon" src="img/vk-icon.svg" width="30" height="30" alt="Вконтакте">
+            </a>
+          </li>
+          <li class="social-button">
+            <a href="#">
+              <img class="fb-icon" src="img/fb-icon.svg" width="30" height="30" alt="Фейсбук">
+            </a>
+          </li>
+          <li class="social-button">
+            <a href="#">
+              <img class="insta-icon" src="img/insta-icon.svg" width="30" height="30" alt="Инстаграм">
+            </a>
+          </li>
+        </ul>
       <div class="social-text">
         <p class="social-slogan">
           Давайте дружить, это выгодно!
