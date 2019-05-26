@@ -8,7 +8,7 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-  <header class="main-header">
+  <header class="header">
     <nav class="navigation">
       <a href="index.html">
         <img class="index-logo" src="img/nerds-logo.svg" width="160" height="65" alt="Логотип «Нёрдс»">
@@ -28,7 +28,7 @@
           </li>
       </ul>
     </nav>
-    <h1 class="heading-text">Магазин готовых шаблонов</h1>
+    <h1 class="header-text">Магазин готовых шаблонов</h1>
   </header>
   <main class="container">
     <form class="filter">
@@ -61,17 +61,34 @@
       <button class="button" type="submit">Показать</button>
     </form>
     <section class="catalog">
+      <h2 class="visually-hidden">Каталог сайтов</h2>
       <div class="catalog-sorting">
-        <span class="sorting-title">Сортировать</span>
-        <a class="button sorting-button" href="#">По цене</a>
-        <a class="button sorting-button" href="#">По типу</a>
-        <a class="button sorting-button" href="#">По названию</a>
-        <a class="button sorting-button-down" href="#"></a>
-        <a class="button sorting-button-up" href="#"></a>
+        <span class="sorting-title">Сортировать:</span>
+        <ul class="sorting-list">
+          <li class="sorting-list-item">
+            <a class="sorting-button current" href="#">По цене</a>
+          </li>
+          <li class="sorting-list-item">
+            <a class="sorting-button" href="#">По типу</a>
+          </li>
+          <li class="sorting-list-item">
+            <a class="sorting-button" href="#">По названию</a>
+          </li>
+          <li class="sorting-list-item">
+            <a class="sorting-button current" href="#">
+                <img src="img/icon-down-dir.svg" width="11" height="11">
+            </a>
+          </li>
+          <li class="sorting-list-item">
+            <a class="sorting-button" href="#">
+                <img src="img/icon-up-dir.svg" width="11" height="11">
+            </a>
+          </li>
+        </ul>
       </div>
       <ul class="catalog-list">
         <li class="catalog-item">
-          <div class="browser">
+          <div class="catalog-item-browser">
               <img src="img/browser.svg" width="360" height="40" alt="Просмотр">
           </div>
           <img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
@@ -82,7 +99,7 @@
           </div>            
         </li>
         <li class="catalog-item">
-          <div class="browser">
+          <div class="catalog-item-browser">
               <img src="img/browser.svg" width="360" height="40" alt="Просмотр">
           </div>
           <img src="img/img-pink.jpg" width="360" height="576" alt="Pink App">
@@ -93,7 +110,7 @@
           </div>            
         </li>
         <li class="catalog-item">
-          <div class="browser">
+          <div class="catalog-item-browser">
               <img src="img/browser.svg" width="360" height="40" alt="Просмотр">
           </div>
           <img src="img/img-barbershop.jpg" width="360" height="576" alt="Barbershop">
@@ -104,7 +121,7 @@
           </div>            
         </li>
         <li class="catalog-item">
-          <div class="browser">
+          <div class="catalog-item-browser">
               <img src="img/browser.svg" width="360" height="40" alt="Просмотр">
           </div>
           <img src="img/img-mishka.jpg" width="360" height="576" alt="MISHKA">
@@ -115,7 +132,7 @@
           </div>            
         </li>
         <li class="catalog-item">
-          <div class="browser">
+          <div class="catalog-item-browser">
               <img src="img/browser.svg" width="360" height="40" alt="Просмотр">
           </div>
           <img src="img/img-aplus.jpg" width="360" height="576" alt="Aplus">
@@ -126,7 +143,7 @@
           </div>            
         </li>
         <li class="catalog-item">
-          <div class="browser">
+          <div class="catalog-item-browser">
               <img src="img/browser.svg" width="360" height="40" alt="Просмотр">
           </div>
           <img src="img/img-kvast.jpg" width="360" height="576" alt="КВАСТ">
@@ -139,10 +156,10 @@
       </ul>
     </section>
     <ul class="pagination-list">
-      <li class="pagination-item"><a class="current">1</a></li>
-      <li class="pagination-item"><a href="#">2</a></li>
-      <li class="pagination-item"><a href="#">3</a></li>
-      <li class="pagination-item"><a href="#">Следующая</a></li>
+      <li class="pagination-item"><a class="button current">1</a></li>
+      <li class="pagination-item"><a class="button" href="#">2</a></li>
+      <li class="pagination-item"><a class="button" href="#">3</a></li>
+      <li class="pagination-item"><a class="button" href="#">Следующая</a></li>
     </ul>
     <section class="modal modal-feedback">
         <h2>Напишите нам</h2>

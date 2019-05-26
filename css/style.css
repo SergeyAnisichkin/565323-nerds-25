@@ -35,10 +35,12 @@ html { box-sizing: border-box; }
   background-color: #d7373b;
 }
 
-.navigation { background-color: #eeeeee; }
+.header,
+.slider { background-color: #eeeeee; }
 
 .navigation a {
   font: inherit;
+  color: #000000;
   font-weight: 500;
   text-transform: uppercase;
 }
@@ -59,11 +61,12 @@ html { box-sizing: border-box; }
 .site-navigation a:active,
 .user-navigation a:active { color: rgba(0, 0, 0, 0.3); }
 
-.current { border-bottom: 1px solid red; }
+.navigation .current { border-bottom: 1px solid red; }
 
-.advantages-list { list-style: none; }
+.slide-slogan features-slogan
+.products-list { list-style: none; }
 
-.advantages-item-title {
+.products-title {
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -79,16 +82,47 @@ html { box-sizing: border-box; }
 .btn-presentation:hover { background-color: #eab534; }
 .btn-presentation:active { background-color: #e5a722; }
 
+.features-slogan {
+  font-size: 45px;
+  font-weight: 500;
+  line-height:  45px;
+}
+
+.features-orders {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.features-table-title {
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.features .table-date {
+  font-size: 45px;
+  font-weight: 700;
+}
+.portfolio-list { list-style: none; }
+
+.portfolio-item a { opacity: 0.2; }
+.portfolio-item a:hover { opacity: 1; }
+.portfolio-item a:active { opacity: 0.1; }
+
 .social { list-style: none; }
 
+.social-item {
+  height: 80px;
+}
+
 .social-button {
-  font-size: 79px;
+  font-size: 40px;
   background-color: #e1e1e1;
 }
 
 .social-button:hover { background-color: #e74246; }
+
 .social-button:active {
-  fill: rgba(0, 0, 0, 0.3);
   color: rgba(0, 0, 0, 0.3);
   background-color: #d7373b;
 }
@@ -108,16 +142,21 @@ html { box-sizing: border-box; }
 
  /* Catalog */
 
-.heading-text {
+.header-text {
   font-size: 55px;
   font-weight: 500;
 }
 
+.filter-price,
 .filter-grid,
-.filter-features {
+.filter-features,
+.sorting-title {
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
+ }
+ .filter label {
+  color: #283136;
  }
 
 .filter button {
@@ -130,7 +169,25 @@ html { box-sizing: border-box; }
 
 .filter button:active { background-color: #d5d5d5; }
 
-.catalog-list { list-style: none; }
+.sorting-button {
+  font-size: 14px;
+  color: #000000;
+  opacity: 0.3; 
+  text-transform: uppercase;
+}
+
+.sorting-button:hover,
+.sorting-button:focus { opacity: 0.6; }
+
+.sorting-button:active,
+.sorting-list-item .current { opacity: 1; }
+
+.sorting-list,
+.catalog-list,
+.pagination-list { list-style: none; }
+
+.catalog-item-browser { opacity: 0.12; }
+.catalog-item-browser:hover { opacity: 1; }
 
 .site-title a {
   font: inherit;
@@ -154,3 +211,18 @@ html { box-sizing: border-box; }
   color: #ffffff;
 }
 
+.pagination-item a.button {
+  color: #000000;
+  background-color: #eeeeee;
+}
+
+.pagination-item a.current { background-color: #ffffff;
+}
+
+.pagination-item a.button:hover,
+.pagination-item a.button:focus { background-color: #dfdfdf; }
+
+.pagination-item a.button:active {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: #d5d5d5;
+ }
