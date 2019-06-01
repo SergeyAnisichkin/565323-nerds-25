@@ -10,23 +10,25 @@
 <body>
   <header class="header">
     <nav class="navigation">
-      <a href="index.html">
-        <img class="index-logo" src="img/nerds-logo.svg" width="160" height="65" alt="Логотип «Нёрдс»">
-      </a>
-      <ul class="site-navigation">
-        <li><a href="#">Студия</a></li>
-        <li><a href="#">Клиенты</a></li>
-        <li><a class="current">Магазин</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
-      <ul class="user-navigation">
-          <li class="cart-link">
-            <a href="#">
-              <img src="img/cart-icon.svg" width="15" height="15" alt="Иконка Корзина">
-              Корзина
-            </a>
-          </li>
-      </ul>
+      <div class="container">
+        <a href="index.html">
+          <img class="index-logo" src="img/nerds-logo.svg" width="160" height="65" alt="Логотип «Нёрдс»">
+        </a>
+        <ul class="site-navigation">
+          <li><a href="#">Студия</a></li>
+          <li><a href="#">Клиенты</a></li>
+          <li><a class="current">Магазин</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <ul class="user-navigation">
+            <li>
+              <a class="cart-link" href="#">
+                <img src="img/cart-icon.svg" width="15" height="15" alt="Иконка Корзина">
+                <span>Корзина</span>
+              </a>
+            </li>
+        </ul>
+      </div>  
     </nav>
     <h1 class="header-text">Магазин готовых шаблонов</h1>
   </header>
@@ -39,25 +41,42 @@
       <label class="price-max" for="price-max">До</label>
       <input type="number" min="0" max="20000" value="0" id="price-max">       
       
-      <p class="filter-grid">Сетка:</p>
-      <input name="grid" type="radio" id="adapt" checked>
-      <label for="adapt">Адаптивная</label>
-      <input name="grid" type="radio" id="fix">
-      <label for="fix">Фиксированная</label>
-      <input name="grid" type="radio" id="resp">
-      <label for="resp">Резиновая</label>
-
-      <p class="filter-features">Особенности:</p>
-      <input name="features" type="checkbox" id="slider" checked>
-      <label for="slider">Слайдер</label>
-      <input name="features" type="checkbox" id="block">
-      <label for="block">Блок преимуществ</label>
-      <input name="features" type="checkbox" id="news">
-      <label for="news">Новости</label>
-      <input name="features" type="checkbox" id="gallery">
-      <label for="gallery">Галерея</label>
-      <input name="features" type="checkbox" id="cart">
-      <label for="cart">Корзина</label>
+      <p class="filter-grid-title">Сетка:</p>
+      <ul class="filter-grid-list">
+        <li>
+          <input name="grid" type="radio" id="adapt" checked>
+          <label for="adapt">Адаптивная</label>
+        </li>
+        <li>
+          <input name="grid" type="radio" id="fix">
+          <label for="fix">Фиксированная</label>
+        </li>
+        <li>
+          <input name="grid" type="radio" id="resp">
+          <label for="resp">Резиновая</label>
+        </li>
+      </ul>
+      <p class="filter-features-title">Особенности:</p>
+      <p class="filter-features">
+        <input name="features" type="checkbox" id="slider" checked>
+        <label for="slider">Слайдер</label>
+      </p>
+      <p class="filter-features">
+        <input name="features" type="checkbox" id="block">
+        <label for="block">Блок преимуществ</label>
+      </p>
+      <p class="filter-features">
+        <input name="features" type="checkbox" id="news">
+        <label for="news">Новости</label>
+      </p>
+      <p class="filter-features">
+        <input name="features" type="checkbox" id="gallery">
+        <label for="gallery">Галерея</label>
+      </p>
+      <p class="filter-features">
+        <input name="features" type="checkbox" id="cart">
+        <label for="cart">Корзина</label>
+      </p>
       <button class="button" type="submit">Показать</button>
     </form>
     <section class="catalog">
@@ -105,7 +124,7 @@
           <img src="img/img-pink.jpg" width="360" height="576" alt="Pink App">
           <div class="catalog-item-price">
             <p class="site-title"><a href="#">Pink App</a></p>
-            <p class="site-text">Продуктовый лендинг приложения для iOS и Android</p>
+            <p class="site-text">Продуктовый лендинг для приложений iOS и Android</p>
             <a class="button" href="#"> 9 900 РУБ.</a>
           </div>            
         </li>
@@ -154,39 +173,37 @@
           </div>            
         </li>
       </ul>
+      <ul class="pagination-list">
+        <li class="pagination-item"><a class="button current">1</a></li>
+        <li class="pagination-item"><a class="button" href="#">2</a></li>
+        <li class="pagination-item"><a class="button" href="#">3</a></li>
+        <li class="pagination-item"><a class="button" href="#">Следующая</a></li>
+      </ul>
     </section>
-    <ul class="pagination-list">
-      <li class="pagination-item"><a class="button current">1</a></li>
-      <li class="pagination-item"><a class="button" href="#">2</a></li>
-      <li class="pagination-item"><a class="button" href="#">3</a></li>
-      <li class="pagination-item"><a class="button" href="#">Следующая</a></li>
-    </ul>
     <section class="modal modal-feedback">
-        <h2>Напишите нам</h2>
-        <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-          <p class="feedback-name">
-            <label class="feedback-label" for="user-name">Ваше имя:</label>
-            <input class="feedback-input" id="user-name" type="text" name="name" placeholder="Имя Фамилия">
-          </p>
-          <p class="feedback-email">
-            <label class="feedback-label" for="user-email">Ваш e-mail:</label>
-            <input class="feedback-input" id="user-email" type="text" name="email" placeholder="email@example.com">
-          </p>
-          <p>
-            <label class="feedback-label" for="user-text">Текст письма:</label>
-            <textarea rows="3" id="user-text" name="text" placeholder="В свободной форме"></textarea>
-          </p>
-          <button class="modal-submit" type="submit">
-              Отправить
-          </button>
-        </form>
-  
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="contacts">
-        <img class="contacts-map" src="img/map.jpg" width="1440" height="416" alt="Карта">
-        <img class="contacts-map-marker" src="img/map-marker.png" width="231" height="190" alt="Маркер">
+      <h2>Напишите нам</h2>
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="feedback-name">
+          <label class="feedback-label" for="user-name">Ваше имя:</label>
+          <input class="feedback-input" id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+        </p>
+        <p class="feedback-email">
+          <label class="feedback-label" for="user-email">Ваш e-mail:</label>
+          <input class="feedback-input" id="user-email" type="text" name="email" placeholder="email@example.com">
+        </p>
+        <p>
+          <label class="feedback-label" for="user-text">Текст письма:</label>
+          <textarea rows="3" id="user-text" name="text" placeholder="В свободной форме"></textarea>
+        </p>
+        <button class="modal-submit" type="submit">
+            Отправить
+        </button>
+      </form>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="contacts-wrapper">
         <div class="contacts-text">
           <h2 class="contacts-title">
             NЁRDS DESIGN STUDIO
@@ -199,32 +216,36 @@
             <a class="button" href="#">Напишите нам</a>
           </p>
         </div>
+        <img class="contacts-map-marker" src="img/map-marker.png" width="231" height="190" alt="Маркер">
       </div>
-      <ul class="social">
-          <li class="social-button">
-            <a href="#">
+      <div class="social-wrapper">
+        <ul class="social-list">
+          <li class="social-item">
+            <a class="social-button" href="#">
               <img class="vk-icon" src="img/vk-icon.svg" width="30" height="30" alt="Вконтакте">
             </a>
           </li>
-          <li class="social-button">
-            <a href="#">
+          <li class="social-item">
+            <a class="social-button" href="#">
               <img class="fb-icon" src="img/fb-icon.svg" width="30" height="30" alt="Фейсбук">
             </a>
           </li>
-          <li class="social-button">
-            <a href="#">
+          <li class="social-item">
+            <a class="social-button" href="#">
               <img class="insta-icon" src="img/insta-icon.svg" width="30" height="30" alt="Инстаграм">
             </a>
           </li>
         </ul>
-      <div class="social-text">
-        <p class="social-slogan">
-          Давайте дружить, это выгодно!
-        </p>
-        <p>
-          Скидка 10% для друзей из социальных сетей.
-        </p>
+        <div class="social-text">
+          <p class="social-slogan">
+            Давайте дружить, это выгодно!
+          </p>
+          <p>
+            Скидка 10% для друзей из социальных сетей.
+          </p>
+        </div>
       </div>
-    </footer>
+    </div>
+  </footer>
 </body>
 </html>
