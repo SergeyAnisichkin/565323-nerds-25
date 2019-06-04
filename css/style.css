@@ -9,7 +9,6 @@ body {
   color: #000000;
       
   background-color: #ffffff;
-
 }
 img { max-width: 100%; }
 a { text-decoration: none; }
@@ -37,17 +36,11 @@ html { box-sizing: border-box; }
   background-color: #d7373b;
 }
 
-.header,
-.slider { 
-  background-color: #eeeeee;
-}
-
 .container {
   width: 1160px;
   margin: 0 auto;
   padding: 0;
 }
-
 
 .navigation .container,
 .site-navigation,
@@ -133,7 +126,7 @@ html { box-sizing: border-box; }
 }
 
 .products-item {
-  width: 300px;
+  flex: 0 0 300px;
   min-height: 350px;
   margin-right: 100px;
   margin-bottom: 80px;
@@ -143,6 +136,8 @@ html { box-sizing: border-box; }
   font-size: 24px;
   font-weight: 700;
   text-transform: uppercase;
+  margin-top: 21px;
+  margin-bottom: 20px;
 }
 
 .btn-application { background-color: #00ca74; }
@@ -164,7 +159,7 @@ html { box-sizing: border-box; }
 
 .features-left {
   width: 650px;
-  padding-bottom: 120px;
+  padding-bottom: 105px;
 }
 
 .features-right {
@@ -176,12 +171,15 @@ html { box-sizing: border-box; }
   font-size: 45px;
   font-weight: 500;
   line-height:  45px;
-  margin-top: 75px;
+  margin-top: 71px;
+  margin-bottom: 32px;
 }
 
 .features-orders {
   font-weight: 700;
   text-transform: uppercase;
+  margin-top: 41px;
+  margin-bottom: 25px;
 }
 
 .features-table-title {
@@ -199,15 +197,18 @@ html { box-sizing: border-box; }
 
 .portfolio .container { 
   border-bottom: 2px solid #eeeeee;
-  margin-bottom: 75px;
+  margin-bottom: 79px;
 }
 
 .portfolio-list {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
   list-style: none; 
+  padding-left: 31px;
+  padding-right: 31px;
   margin-top: 45px;
-  margin-bottom: 45px;
+  margin-bottom: 37px;
 }
 
 .portfolio-item a { opacity: 0.2; }
@@ -234,9 +235,26 @@ html { box-sizing: border-box; }
 .contacts-text {
   background-color: #ffffff;
   width: 270px;
+  padding-top: 52px;
   padding-left: 50px;
+  padding-bottom: 47px;
   margin-right: 360px;
-  margin-bottom: 220px;
+  margin-bottom: 105px;
+}
+
+.contacts-title {
+  font-size: 18px;
+  margin: 0;
+}
+.contacts-address {
+  color: #666666;
+  margin-top: 23px;
+  margin-bottom: 64px;
+
+}
+
+.contacts-map-marker {
+  margin-top: 34px;
 }
 
 .social-list { 
@@ -244,14 +262,21 @@ html { box-sizing: border-box; }
   justify-content: space-between;
   list-style: none; 
   width: 260px;
-  margin-right: 120px;
+  padding: 0;
+  margin-right: 140px;
 }
 
 .social-item {
-  width: 80px;
-  height: 80px;
+  border-radius: 50%;
   background-color: #e1e1e1;
-}
+} 
+
+.social-item img {
+  display: block;
+  margin: 25px;
+} 
+
+
 
 .social-item:hover { background-color: #e74246; }
 
@@ -262,11 +287,14 @@ html { box-sizing: border-box; }
 
 .social-slogan {
   font-size: 36px;
-  font-weight: 700;
+  font-weight: 500;
   margin: 0;
   padding-top: 30px;
  }
 
+.social-sale {
+  color: #444444;
+}
  .modal {
   display: none;
 }
