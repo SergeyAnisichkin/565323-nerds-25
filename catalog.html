@@ -33,50 +33,65 @@
     <h1 class="header-text">Магазин готовых шаблонов</h1>
   </header>
   <main class="container">
-    <form class="filter">
-      <label class="filter-price" for="range">Стоимость:</label>
-      <input type="range" min="0" max="20000" value="15000" id="range">
-      <label class="price-min" for="price-min">От</label>
-      <input type="number" min="0" max="20000" value="0" id="price-min">
-      <label class="price-max" for="price-max">До</label>
-      <input type="number" min="0" max="20000" value="0" id="price-max">       
-      
-      <p class="filter-grid-title">Сетка:</p>
-      <ul class="filter-grid-list">
-        <li>
-          <input name="grid" type="radio" id="adapt" checked>
-          <label for="adapt">Адаптивная</label>
-        </li>
-        <li>
-          <input name="grid" type="radio" id="fix">
-          <label for="fix">Фиксированная</label>
-        </li>
-        <li>
-          <input name="grid" type="radio" id="resp">
-          <label for="resp">Резиновая</label>
-        </li>
-      </ul>
-      <p class="filter-features-title">Особенности:</p>
-      <p class="filter-features">
-        <input name="features" type="checkbox" id="slider" checked>
-        <label for="slider">Слайдер</label>
-      </p>
-      <p class="filter-features">
-        <input name="features" type="checkbox" id="block">
-        <label for="block">Блок преимуществ</label>
-      </p>
-      <p class="filter-features">
-        <input name="features" type="checkbox" id="news">
-        <label for="news">Новости</label>
-      </p>
-      <p class="filter-features">
-        <input name="features" type="checkbox" id="gallery">
-        <label for="gallery">Галерея</label>
-      </p>
-      <p class="filter-features">
-        <input name="features" type="checkbox" id="cart">
-        <label for="cart">Корзина</label>
-      </p>
+    <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+      <fieldset class="filter-price">
+        <legend>Стоимость:</legend>
+        <div class="range-filter">
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="toggle toggle-min"></div>
+            <div class="toggle toggle-max"></div>
+          </div>
+          <div class="price-controls">
+            <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+            <label class="max-price">до <input name="max-price" type="text" value="15 000"></label>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset class="filter-grid">
+        <legend>Сетка:</legend>
+        <ul class="filter-grid-list">
+          <li>
+            <input name="grid" type="radio" id="adapt" checked>
+            <label for="adapt">Адаптивная</label>
+          </li>
+          <li>
+            <input name="grid" type="radio" id="fix">
+            <label for="fix">Фиксированная</label>
+          </li>
+          <li>
+            <input name="grid" type="radio" id="resp">
+            <label for="resp">Резиновая</label>
+          </li>
+        </ul>
+      </fieldset>         
+      <fieldset class="filter-features">
+        <legend>Особенности:</legend>
+        <ul class="filter-features-list">
+          <li>
+            <input name="features" type="checkbox" id="slider" checked>
+            <label for="slider">Слайдер</label>
+          </li>
+          <li>
+            <input name="features" type="checkbox" id="block">
+            <label for="block">Блок преимуществ</label>
+          </li>
+          <li>
+            <input name="features" type="checkbox" id="news">
+            <label for="news">Новости</label>
+          </li>
+          <li>
+            <input name="features" type="checkbox" id="gallery">
+            <label for="gallery">Галерея</label>
+          </li>
+          <li>
+            <input name="features" type="checkbox" id="cart">
+            <label for="cart">Корзина</label>
+          </li>
+        </ul>
+      </fieldset> 
       <button class="button" type="submit">Показать</button>
     </form>
     <section class="catalog">
@@ -107,9 +122,10 @@
       </div>
       <ul class="catalog-list">
         <li class="catalog-item">
-          <div class="catalog-item-browser">
+          <div class="browser-hover">
               <img src="img/browser.svg" width="360" height="40" alt="Просмотр">
           </div>
+          <img class="catalog-item-browser" src="img/browser.svg" width="360" height="40" alt="Просмотр">
           <img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
           <div class="catalog-item-price">
             <p class="site-title"><a href="#">Sedona</a></p>
@@ -177,7 +193,7 @@
         <li class="pagination-item"><a class="button current">1</a></li>
         <li class="pagination-item"><a class="button" href="#">2</a></li>
         <li class="pagination-item"><a class="button" href="#">3</a></li>
-        <li class="pagination-item"><a class="button" href="#">Следующая</a></li>
+        <li class="pagination-item"><a class="button next" href="#">Следующая</a></li>
       </ul>
     </section>
     <section class="modal modal-feedback">
@@ -209,12 +225,12 @@
             NЁRDS DESIGN STUDIO
           </h2>  
           <p class="contacts-address">
-            191186, Санкт-Петербург,<br>
-            Б. Конюшенная, д. 19/8<br>
-            <br>
-            Телефон: +7 (812) 275-75-75<br>
-            <a class="button" href="#">Напишите нам</a>
+              191186, Санкт-Петербург,<br>
+              ул. Б. Конюшенная, д. 19/8<br>
+              <br>
+              тел: +7 (812) 275-75-75<br>
           </p>
+          <a class="button" href="#">Напишите нам</a>
         </div>
         <img class="contacts-map-marker" src="img/map-marker.png" width="231" height="190" alt="Маркер">
       </div>
@@ -247,5 +263,28 @@
       </div>
     </div>
   </footer>
+  <section class="modal modal-feedback">
+    <h2>Напишите нам</h2>
+    <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+      <fieldset class="filter-price">
+        <legend>Напишите нам:</legend>
+        <p class="feedback-name">
+          <label class="feedback-label" for="user-name">Ваше имя:</label>
+          <input class="feedback-input" id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+        </p>
+        <p class="feedback-email">
+          <label class="feedback-label" for="user-email">Ваш e-mail:</label>
+          <input class="feedback-input" id="user-email" type="text" name="email" placeholder="email@example.com">
+        </p>
+        <p>
+          <label class="feedback-label" for="user-text">Текст письма:</label>
+          <textarea rows="3" id="user-text" name="text" placeholder="В свободной форме"></textarea>
+        </p>
+        <button class="modal-submit" type="submit">
+            Отправить
+        </button>
+      </fieldset>
+    </form>
+  </section>
 </body>
 </html>
