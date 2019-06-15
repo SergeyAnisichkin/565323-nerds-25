@@ -45,13 +45,13 @@ html { box-sizing: border-box; }
   padding: 0;
 }
 
+/* header */
 .header {
   background-color: #eeeeee;
 }
 
 .navigation .container,
-.site-navigation,
-.cart-link {
+.site-navigation {
   display: flex;
   justify-content: space-between;
 }
@@ -61,11 +61,6 @@ html { box-sizing: border-box; }
   padding-bottom: 18px;
 }
 
-.cart-link {
-  width: 115px;
-  margin-left: 45px;
-}
-
 .navigation a {
   font: inherit;
   color: #000000;
@@ -73,17 +68,18 @@ html { box-sizing: border-box; }
   text-transform: uppercase;
 }
 
+.navigation a.current { 
+  padding-bottom: 10px;
+  border-bottom: 2px solid red;
+}
+
 .index-logo:hover,
 .index-logo:focus { opacity: 0.8; }
-
 .index-logo:active { opacity: 0.3; }
 
 .site-navigation { 
   width: 438px;
-}
-
-.site-navigation,
-.user-navigation { 
+  padding: 0;
   list-style: none; 
   margin-top: 30px;
 }
@@ -96,9 +92,21 @@ html { box-sizing: border-box; }
 .site-navigation a:active,
 .user-navigation a:active { color: rgba(0, 0, 0, 0.3); }
 
-.navigation .current { 
-  padding-bottom: 10px;
-  border-bottom: 2px solid red;
+.user-navigation { 
+  list-style: none; 
+  margin-top: 30px;
+  margin-left: 43px;
+  padding: 0;
+}
+
+.user-navigation a {
+  display: inline-block;
+  width: 115px;
+  text-align: right;
+
+  background-image: url("../img/cart-icon.svg");
+  background-position: left center;
+  background-repeat: no-repeat;
 }
 
  /* Index */
@@ -230,7 +238,6 @@ html { box-sizing: border-box; }
 
 .products { 
   margin-top: 79px;
-  border-bottom: 2px solid #eeeeee;
 }
 
 .products-list { 
@@ -244,7 +251,7 @@ html { box-sizing: border-box; }
   flex: 0 0 300px;
   min-height: 350px;
   margin-right: 100px;
-  margin-bottom: 80px;
+  margin-bottom: 78px;
 }
 
 .products-title {
@@ -253,6 +260,10 @@ html { box-sizing: border-box; }
   text-transform: uppercase;
   margin-top: 22px;
   margin-bottom: 20px;
+}
+
+.products-item p {
+  max-width: 245px;
 }
 
 .products-item .button {
@@ -274,45 +285,97 @@ html { box-sizing: border-box; }
 .features .container { 
   display: flex;
   justify-content: space-between;
-  border-bottom: 2px solid #eeeeee;
+
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .features-left {
-  width: 650px;
-  padding-bottom: 105px;
+  width: 660px;
+  padding-bottom: 55px;
 }
 
 .features-right {
   width: 360px;
-  padding-top: 35px;
+  padding-top: 40px;
 }
 
 .features-slogan {
+  margin-top: 75px;
+  margin-bottom: 32px;
+
   font-size: 45px;
   font-weight: 500;
   line-height:  45px;
-  margin-top: 71px;
-  margin-bottom: 32px;
+  letter-spacing: 0.1px;
 }
 
 .features-orders {
+  margin-top: 40px;
+  margin-bottom: 24px;
+
   font-weight: 700;
   text-transform: uppercase;
-  margin-top: 41px;
-  margin-bottom: 25px;
+  letter-spacing: 0.1px;
 }
 
-.features-table-title {
+.order-list { 
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.order-item { 
+  margin-bottom: 24px;
+}
+
+.order-item i { 
+  display: inline-block;
+  position: relative;
+  bottom: 4px;
+  margin-right: 8px;
+  width: 22px;
+  border: 1.5px solid #fb565a;
+}
+
+.indicators-title {
+  margin-top: 30px;
+  font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
-  margin-top: 30px;
-  margin-bottom: 50px;
 }
 
-.features .table-date {
+.indicators-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  padding-top: 10px;
+  margin-top: 42px;
+}
+
+.indicators-list li {
+  max-width: 105px;
+}
+
+.indicator-value {
+  display: inline-block;
   font-size: 45px;
   font-weight: 700;
+}
+
+.indicator-percent {
+  position: relative;
+  top: -10px;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.indicators-list p {
+  line-height: 1.13;
+  margin: 0;
 }
 
 .portfolio .container { 
@@ -434,7 +497,7 @@ html { box-sizing: border-box; }
 
  /* Catalog */
 
-.header-text {
+.header-title {
   width: 730px;
   margin: 0 auto;
   padding-top: 70px;

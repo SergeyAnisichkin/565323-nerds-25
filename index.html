@@ -22,10 +22,7 @@
         </ul>
         <ul class="user-navigation">
           <li>
-            <a class="cart-link" href="#">
-              <img src="img/cart-icon.svg" width="15" height="15" alt="Корзина">
-              <span>Корзина</span>
-            </a>
+            <a href="#">Корзина</a>
           </li>
         </ul>
       </div>
@@ -111,42 +108,41 @@
           </p>
           <ul class="order-list">
             <li class="order-item">
+              <i></i>
               Веб-сайтов любой сложности
             </li>
             <li class="order-item">
+              <i></i>
               Мобильных приложений для iOS и Android
             </li>
             <li class="order-item">
+              <i></i>
               Слайдшоу и видео для корпоративных презентаций
             </li>
           </ul>
         </div>
         <div class="features-right">
           <img class="features-logo" src="img/nerds-illustration.png" width="360" height="208" alt="Илюстрация «Нёрдс»">
-          <table class="features-table">
-            <caption class="features-table-title">
-              с 2004 года Любим точность во всем:
-            </caption>
-            <tr>
-              <td>
-                <span class="table-date">146</span>
-                <span class="table-percent">%</span>
-              </td>
-              <td>
-                <span class="table-date">100</span>
-                <span class="table-percent">%</span>
-              </td>
-              <td>
-                <span class="table-date">50</span>
-                <span class="table-percent">%</span>
-              </td>
-            </tr>
-            <tr>
-              <td>Уровень самоотдачи</td>
-              <td>Соблюдение  сроков</td>
-              <td>Минимальная предоплата</td>
-            </tr>
-          </table> 
+          <h3 class="indicators-title">
+            с 2004 года любим точность во всем:
+          </h3>
+          <ul class="indicators-list">
+            <li>
+              <span class="indicator-value">146</span>
+              <span class="indicator-percent">%</span>
+              <p>Уровень самоотдачи</p>
+            </li>
+            <li>
+              <span class="indicator-value">100</span>
+              <span class="indicator-percent">%</span>
+              <p>Соблюдение  сроков</p>
+            </li>
+            <li>
+              <span class="indicator-value">50</span>
+              <span class="indicator-percent">%</span>
+              <p>Минимальная предоплата</p>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
@@ -176,27 +172,6 @@
           </li>
         </ul>
       </div>
-    </section>
-    <section class="modal modal-feedback">
-      <h2>Напишите нам</h2>
-      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-        <p class="feedback-name">
-          <label class="feedback-label" for="user-name">Ваше имя:</label>
-          <input class="feedback-input" id="user-name" type="text" name="name" placeholder="Имя Фамилия">
-        </p>
-        <p class="feedback-email">
-          <label class="feedback-label" for="user-email">Ваш e-mail:</label>
-          <input class="feedback-input" id="user-email" type="text" name="email" placeholder="email@example.com">
-        </p>
-        <p>
-          <label class="feedback-label" for="user-text">Текст письма:</label>
-          <textarea rows="3" id="user-text" name="text" placeholder="В свободной форме"></textarea>
-        </p>
-        <button class="modal-submit" type="submit">
-            Отправить
-        </button>
-      </form>
-
     </section>
   </main>
   <footer class="footer">
@@ -245,5 +220,28 @@
       </div>
     </div>
   </footer>
+  <section class="modal modal-feedback">
+    <h2>Напишите нам</h2>
+    <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+      <fieldset class="filter-price">
+        <legend>Напишите нам:</legend>
+        <p class="feedback-name">
+          <label class="feedback-label" for="user-name">Ваше имя:</label>
+          <input class="feedback-input" id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+        </p>
+        <p class="feedback-email">
+          <label class="feedback-label" for="user-email">Ваш e-mail:</label>
+          <input class="feedback-input" id="user-email" type="text" name="email" placeholder="email@example.com">
+        </p>
+        <p>
+          <label class="feedback-label" for="user-text">Текст письма:</label>
+          <textarea rows="3" id="user-text" name="text" placeholder="В свободной форме"></textarea>
+        </p>
+        <button class="modal-submit" type="submit">
+            Отправить
+        </button>
+      </fieldset>
+    </form>
+  </section>
 </body>
 </html>
