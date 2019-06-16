@@ -58,7 +58,7 @@ html { box-sizing: border-box; }
 
 .navigation .container {
   padding-top: 48px;
-  padding-bottom: 18px;
+  padding-bottom: 12px;
 }
 
 .navigation a {
@@ -167,13 +167,15 @@ html { box-sizing: border-box; }
 
 .slider-item {
   display: none;
-  padding: 54px 0 80px 0;
+  box-sizing: border-box;
+  padding-top: 60px;
+  padding-bottom: 80px;
 }
 
 .slider-item:nth-child(1) {
   background-image: url("../img/slide-1.png");
   background-repeat: no-repeat;
-  background-position: 93% -6px;
+  background-position: 93% 0;
 }
 
 .slider-item:nth-child(2) {
@@ -248,27 +250,35 @@ html { box-sizing: border-box; }
 }
 
 .products-item {
-  flex: 0 0 300px;
-  min-height: 350px;
+  box-sizing: border-box;
+  min-width: 300px;
+
   margin-right: 100px;
-  margin-bottom: 78px;
+  margin-bottom: 80px;
 }
 
 .products-title {
   font-size: 24px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-top: 22px;
-  margin-bottom: 20px;
+  margin-top: 23px;
+  margin-bottom: 18px;
+}
+
+.products-item .products-1 {
+  letter-spacing: normal;
+}
+.products-item .products-2 {
+  letter-spacing: 0.01em;
 }
 
 .products-item p {
-  max-width: 245px;
+  width: 255px;
 }
 
 .products-item .button {
   width: 160px;
-  margin-top: 31px;
+  margin-top: 32px;
 }
 
 .btn-application { background-color: #00ca74; }
@@ -459,7 +469,7 @@ html { box-sizing: border-box; }
 .contacts-text {
   background-color: #ffffff;
   width: 270px;
-  padding-top: 51px;
+  padding-top: 53px;
   padding-left: 50px;
   padding-bottom: 45px;
   margin-right: 360px;
@@ -521,11 +531,11 @@ html { box-sizing: border-box; }
 
 .social-slogan {
   margin: 0;
-  padding-top: 28px;
+  padding-top: 26px;
 
   font-size: 36px;
   font-weight: 700;
-  letter-spacing: 0.10px;
+  letter-spacing: 0.15px;
  }
 
 .social-sale {
@@ -547,7 +557,7 @@ html { box-sizing: border-box; }
 .header-title {
   width: 730px;
   margin: 0 auto;
-  padding-top: 70px;
+  padding-top: 75px;
   padding-bottom: 123px;
 
   font-size: 55px;
@@ -577,6 +587,8 @@ form.filter {
 }
 
 .filter-price legend {
+  padding-top: 3px;
+
   font-size: 18px;
   line-height: 24px;
   text-transform: uppercase;
@@ -587,14 +599,14 @@ form.filter {
 
 .range-filter {
   width: 260px;
-  margin-top: 51px;
+  margin-top: 50px;
 }
 
 .range-controls {
   position: relative;
   
   height: 41px;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
   padding-top: 39px;
   padding-right: 20px;
   padding-left: 20px;
@@ -676,7 +688,7 @@ form.filter {
 }
 
 .filter-grid {
-  margin-top: 58px;
+  margin-top: 59px;
   padding: 0;
   
   border: none;
@@ -726,8 +738,7 @@ form.filter {
   opacity: 0.4;
 }
 
-.grid-radio:hover input[type="radio"] + .radio-indicator,
-.grid-radio input[type="radio"]:focus  + .radio-indicator {
+.grid-radio:hover input[type="radio"] + .radio-indicator {
   opacity: 1;
 }
 
@@ -784,8 +795,7 @@ form.filter {
   opacity: 0.4;
 }
 
-.features-checkbox:hover input[type="checkbox"] + .checkbox-indicator,
-.features-checkbox input[type="checkbox"]:focus  + .checkbox-indicator {
+.features-checkbox:hover input[type="checkbox"] + .checkbox-indicator {
   opacity: 1;
 }
 
@@ -980,7 +990,7 @@ form.filter {
 }
 
 .pagination-item .button {
-  padding-top: 10px;
+  padding-top: 12px;
   padding-bottom: 10px;
   color: #000000;
 
@@ -997,4 +1007,4 @@ form.filter {
 .pagination-item a.button:active {
   color: rgba(0, 0, 0, 0.3);
   background-color: #d5d5d5;
- }
+}
