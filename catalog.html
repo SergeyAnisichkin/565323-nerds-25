@@ -5,7 +5,7 @@
   <title>HTML Academy: Нёрдс</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body>
   <header class="header">
@@ -190,9 +190,9 @@
     </section>
   </main>
   <footer class="footer">
-    <div class="container">
-      <div class="contacts-wrapper">
-        <div class="contacts-text">
+      <div class="map-google" id="map"></div>
+      <div class="container">
+        <div class="contacts">
           <h2 class="contacts-title">
             NЁRDS DESIGN STUDIO
           </h2>  
@@ -201,58 +201,65 @@
             ул. Б. Конюшенная, д. 19/8
           </p>
           <p class="contacts-phone">тел: +7 (812) 275-75-75</p>
-          <a class="button" href="#">Напишите нам</a>
+          <a class="button write-us" href="#">Напишите нам</a>
         </div>
-        <img class="contacts-map-marker" src="img/map-marker.png" width="231" height="190" alt="Маркер">
-      </div>
-      <div class="social-wrapper">
-        <ul class="social-list">
-          <li class="social-item">
-            <a class="social-button" href="#">
-              <img class="vk-icon" src="img/vk-icon.svg" width="30" height="30" alt="Вконтакте">
-            </a>
-          </li>
-          <li class="social-item">
-            <a class="social-button" href="#">
-              <img class="fb-icon" src="img/fb-icon.svg" width="30" height="30" alt="Фейсбук">
-            </a>
-          </li>
-          <li class="social-item">
-            <a class="social-button" href="#">
-              <img class="insta-icon" src="img/insta-icon.svg" width="30" height="30" alt="Инстаграм">
-            </a>
-          </li>
-        </ul>
-        <div class="social-text">
-          <p class="social-slogan">
-            Давайте дружить, это выгодно!
-          </p>
-          <p class="social-sale">
-            Скидка 10% для друзей из социальных сетей.
-          </p>
+        <div class="social-wrapper">
+          <ul class="social-list">
+            <li class="social-item">
+              <a class="social-button" href="#">
+                <img class="vk-icon" src="img/vk-icon.svg" width="30" height="30" alt="Вконтакте">
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="social-button" href="#">
+                <img class="fb-icon" src="img/fb-icon.svg" width="30" height="30" alt="Фейсбук">
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="social-button" href="#">
+                <img class="insta-icon" src="img/insta-icon.svg" width="30" height="30" alt="Инстаграм">
+              </a>
+            </li>
+          </ul>
+          <div class="social-text">
+            <p class="social-slogan">
+              Давайте дружить, это выгодно!
+            </p>
+            <p class="social-sale">
+              Скидка 10% для друзей из социальных сетей.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-    <section class="modal modal-feedback">
-      <h2>Напишите нам</h2>
-      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-        <p class="feedback-name">
-          <label class="feedback-label" for="user-name">Ваше имя:</label>
-          <input class="feedback-input" id="user-name" type="text" name="name" placeholder="Имя Фамилия">
-        </p>
-        <p class="feedback-email">
-          <label class="feedback-label" for="user-email">Ваш e-mail:</label>
-          <input class="feedback-input" id="user-email" type="text" name="email" placeholder="email@example.com">
-        </p>
-        <p>
-          <label class="feedback-label" for="user-text">Текст письма:</label>
-          <textarea rows="3" id="user-text" name="text" placeholder="В свободной форме"></textarea>
-        </p>
-        <button class="modal-submit" type="submit">
-            Отправить
-        </button>
-      </form>
-    </section>
-  </footer>
+      <section class="modal">
+        <h2 class="visually-hidden">Форма обратной связи</h2>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="modal-feedback">
+            <button class="modal-close" type="button">Закрыть</button>
+            <legend>Напишите нам:</legend>
+            <div class="input-wrapper">
+              <p>
+                <label for="user-name">Ваше имя:</label>
+                <input class="input-name" id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+              </p>
+              <p>
+                <label for="user-email">Ваш e-mail:</label>
+                <input class="input-email" id="user-email" type="text" name="email" placeholder="email@example.com">
+              </p>
+              <p>
+                <label for="user-text">Текст письма:</label>
+                <textarea class="user-text" rows="3" id="user-text" name="text" placeholder="В свободной форме"></textarea>
+              </p>
+            </div>
+            <button class="button button-feedback" type="submit">
+              Отправить
+            </button>
+          </fieldset>
+        </form>
+      </section>
+    </footer>
+   
+    <script src="js/script.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEe6gK3a-MKyU_yLz_piioAJlIx08VK2E&callback=initMap"></script>
 </body>
 </html>
